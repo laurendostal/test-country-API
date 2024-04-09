@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Currency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    :root {
+      --primary-color: hsl(0, 0%, 100%);
+      --text: #000000;
+      --button-bg: rgb(238, 82, 82);
+      --button-border: hsl(230, 54%, 50%);
+    }
+
+    body {
+      max-width: 800px;
+      margin: auto;
+      background-color: var(--primary-color);
+      color: var(--text);
+      font-size: 1.2rem;
+      line-height: 1.5;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1,
+    h2,
+    h3 {
+      text-align: center;
+      margin: 48px 0;
+      letter-spacing: 1.5px;
+    }
+
+    p {
+      margin: 48px 0;
+    }
+
+    button {
+      padding: 10px 24px;
+      background-color: rgb(122, 211, 208);
+      border: solid 2px var(--button-border);
+      border-radius: 4px;
+      color: var(--text);
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 200ms;
+    }
+
+    button:hover {
+      background-color: var(--button-border);
+    }
+  </style>
+</head>
+<body>
+    <h1>Country Currency</h1>
+    <div id="country-currency">
+        <form>
+          <input name="search" id="currency-search" type="text" placeholder=" " />
+          <label for="currency">
+            Enter Country
+          </label>
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <section id="currency"></section>
+    <script src="index.js"></script>
+</body>
+</html>
